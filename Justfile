@@ -1,6 +1,6 @@
 all: clean build pack
 
-run: clean build
+run: clean build clean
 	#!/bin/bash
 	set -m
 	cd Kade-Engine/export/release/html5/bin
@@ -12,6 +12,8 @@ build: week_data week_characters week_names week_icons
 	#!/bin/bash
 	cd Kade-Engine
 	./build-with-docker.sh
+	cd ..
+	just clean
 
 clean:
 	#!/bin/bash
@@ -33,4 +35,4 @@ week_icons:
 
 pack:
 	rm out.tar.gz || echo "No existing artifact found."
-	tar -czvf out.tar.gz Kade-Engine/export/release/html5/bin CODE_LICENSE ART_LICENSE
+	tar -czvf out.tar.gz Kade-Engine/export/release/html5/bin CODE_LICENSE.md ART_LICENSE.md
