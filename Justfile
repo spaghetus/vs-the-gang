@@ -33,4 +33,4 @@ week_icons:
 
 pack:
 	rm out.tar.gz || echo "No existing artifact found."
-	tar -czvf out.tar.gz Kade-Engine/export/release/html5/bin LICENSE
+	tar -czvf out.tar.gz Kade-Engine/export/release/html5/bin CODE_LICENSE ART_LICENSE
