@@ -1,4 +1,6 @@
-he MIT License (MIT)
+(Applies only to code; art and music assets are licensed under ART_LICENSE)
+
+The MIT License (MIT)
 
 Copyright © 2021 <copyright holders>
 
