@@ -1,0 +1,3 @@
+[submodule "Kade-Engine"]
+	path = Kade-Engine
+	url = git@github.com:spaghetus/Kade-Engine.git
